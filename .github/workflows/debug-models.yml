@@ -1,0 +1,14 @@
+name: Debug Models
+on:
+  workflow_dispatch
+permissions:
+  contents: read
+  models: read
+jobs:
+  debug:
+    runs-on: ubuntu-latest
+    env:
+      GH_MODELS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - name: Call GitHub Models
+        run: curl -s -X POST "https://models.github.ai/inference/chat/completions" -H "Authorization: Bearer $GH_MODELS_TOKEN" -H "Content-Type: application/json" -d '{"model":"openai/gpt-4o-mini","messages":[{"role":"user","content":"Return JSON only with keys score, reason, summary, tags. Item: Major AI chip announcement."}],"response_format":{"type":"json_object"},"max_tokens":200}' | head -c 3000
