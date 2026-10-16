@@ -1,9 +1,9 @@
 {
   "ai": {
-    "analysis_concurrency": 5,
+    "analysis_concurrency": 1,
     "api_key_env": "GH_MODELS_TOKEN",
     "base_url": "https://models.inference.ai.azure.com",
-    "enrichment_concurrency": 5,
+    "enrichment_concurrency": 2,
     "languages": [
       "zh"
     ],
@@ -11,7 +11,7 @@
     "model": "openai/gpt-4o-mini",
     "provider": "openai",
     "temperature": 0.3,
-    "throttle_sec": 1
+    "throttle_sec": 3
   },
   "collection": {
     "time_window_hours": 24
@@ -71,7 +71,7 @@
       "country": null,
       "enabled": true,
       "language": null,
-      "max_records": 50,
+      "max_records": 8,
       "mode": "ArtList",
       "profile": "tech-news",
       "query": "artificial intelligence",
@@ -83,13 +83,13 @@
       "country": "US",
       "enabled": true,
       "language": "en",
-      "max_results": 50,
+      "max_results": 10,
       "profile": "tech-news",
       "query": "artificial intelligence"
     },
     "hackernews": {
       "enabled": true,
-      "fetch_top_stories": 30,
+      "fetch_top_stories": 10,
       "min_score": 100,
       "profile": "tech-news"
     },
