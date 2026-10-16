@@ -54,11 +54,11 @@
     "default_profile": "tech-news",
     "profile_settings": {
       "ai-creator": {
-        "threshold": 7.0,
+        "threshold": 6.0,
         "topic_dedup": true
       },
       "tech-news": {
-        "threshold": 7.0,
+        "threshold": 6.0,
         "topic_dedup": true
       }
     },
