@@ -2,7 +2,7 @@
   "ai": {
     "analysis_concurrency": 5,
     "api_key_env": "GH_MODELS_TOKEN",
-    "base_url": "https://models.github.ai/inference",
+    "base_url": "https://models.inference.ai.azure.com",
     "enrichment_concurrency": 5,
     "languages": [
       "zh"
