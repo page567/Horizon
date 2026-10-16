@@ -1,14 +1,15 @@
 {
   "ai": {
     "analysis_concurrency": 5,
-    "api_key_env": "GOOGLE_API_KEY",
+    "api_key_env": "GH_MODELS_TOKEN",
+    "base_url": "https://models.github.ai/inference",
     "enrichment_concurrency": 5,
     "languages": [
       "zh"
     ],
     "max_tokens": 8192,
-    "model": "gemini-2.5-flash",
-    "provider": "gemini",
+    "model": "openai/gpt-4o-mini",
+    "provider": "openai",
     "temperature": 0.3,
     "throttle_sec": 1
   },
