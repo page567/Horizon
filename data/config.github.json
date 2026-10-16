@@ -70,7 +70,7 @@
       "country": null,
       "enabled": true,
       "language": null,
-      "max_records": 8,
+      "max_records": 4,
       "mode": "ArtList",
       "profile": "tech-news",
       "query": "artificial intelligence",
@@ -82,13 +82,13 @@
       "country": "US",
       "enabled": true,
       "language": "en",
-      "max_results": 10,
+      "max_results": 5,
       "profile": "tech-news",
       "query": "artificial intelligence"
     },
     "hackernews": {
       "enabled": true,
-      "fetch_top_stories": 10,
+      "fetch_top_stories": 6,
       "min_score": 100,
       "profile": "tech-news"
     },
