@@ -1,1 +1,179 @@
-{"ai":{"analysis_concurrency":5,"api_key_env":"DEEPSEEK_API_KEY","base_url":"https://api.deepseek.com","enrichment_concurrency":5,"languages":["zh"],"max_tokens":8192,"model":"deepseek-v4-flash","provider":"deepseek","temperature":0.3,"throttle_sec":1},"collection":{"time_window_hours":24},"digest":{"category_groups":{"ai":{"categories":["ai-news","ai-tools"],"limit":5},"dev":{"categories":["github-trending","llm-inference","semiconductors"],"limit":5},"news":{"categories":["news"],"limit":5}},"default_group":"other","default_group_limit":3,"max_items":15,"profile_order":["tech-news","ai-creator"]},"display":{"icon_style":"emoji"},"processing":{"default_profile":"tech-news","profile_settings":{"ai-creator":{"threshold":7.0,"topic_dedup":true},"tech-news":{"threshold":7.0,"topic_dedup":true}},"profiles_dir":"profiles"},"sources":{"gdelt":{"category":"news","country":null,"enabled":true,"language":null,"max_records":50,"mode":"ArtList","profile":"tech-news","query":"artificial intelligence","timespan":null},"google_news":{"category":"news","ceid":null,"country":"US","enabled":true,"language":"en","max_results":50,"profile":"tech-news","query":"artificial intelligence"},"hackernews":{"enabled":true,"fetch_top_stories":30,"min_score":100,"profile":"tech-news"},"ossinsight":{"enabled":true,"keywords":[],"languages":["All","Python","TypeScript"],"max_items":30,"min_stars":10,"period":"past_24_hours","profile":"tech-news"},"reddit":{"enabled":true,"fetch_comments":10,"subreddits":[{"enabled":true,"fetch_limit":10,"min_score":60,"profile":"tech-news","sort":"hot","subreddit":"MachineLearning","time_filter":"day"},{"enabled":true,"fetch_limit":10,"min_score":60,"profile":"ai-creator","sort":"hot","subreddit":"LocalLLaMA","time_filter":"day"}],"users":[]},"rss":[{"category":"ai-tools","enabled":true,"name":"Simon Willison","profile":"tech-news","url":"https://simonwillison.net/atom/everything/"},{"category":"ai-news","enabled":true,"name":"量子位","profile":"tech-news","url":"https://wechat2rss.xlab.app/feed/7131b577c61365cb47e81000738c10d872685908.xml"},{"category":"ai-news","enabled":true,"name":"新智元","profile":"tech-news","url":"https://wechat2rss.xlab.app/feed/ede30346413ea70dbef5d485ea5cbb95cca446e7.xml"},{"category":"semiconductors","enabled":true,"name":"Semianalysis","profile":"tech-news","url":"https://newsletter.semianalysis.com/feed"},{"category":"llm-inference","content_extractor":"trafilatura","enabled":true,"name":"vLLM Blog","profile":"tech-news","url":"https://vllm.ai/blog/rss.xml"},{"category":"github-trending","enabled":true,"name":"GitHub Trending - Daily","profile":"ai-creator","url":"https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml"}]}}
+{
+  "ai": {
+    "analysis_concurrency": 5,
+    "api_key_env": "GOOGLE_API_KEY",
+    "enrichment_concurrency": 5,
+    "languages": [
+      "zh"
+    ],
+    "max_tokens": 8192,
+    "model": "gemini-2.5-flash",
+    "provider": "gemini",
+    "temperature": 0.3,
+    "throttle_sec": 1
+  },
+  "collection": {
+    "time_window_hours": 24
+  },
+  "digest": {
+    "category_groups": {
+      "ai": {
+        "categories": [
+          "ai-news",
+          "ai-tools"
+        ],
+        "limit": 5
+      },
+      "dev": {
+        "categories": [
+          "github-trending",
+          "llm-inference",
+          "semiconductors"
+        ],
+        "limit": 5
+      },
+      "news": {
+        "categories": [
+          "news"
+        ],
+        "limit": 5
+      }
+    },
+    "default_group": "other",
+    "default_group_limit": 3,
+    "max_items": 15,
+    "profile_order": [
+      "tech-news",
+      "ai-creator"
+    ]
+  },
+  "display": {
+    "icon_style": "emoji"
+  },
+  "processing": {
+    "default_profile": "tech-news",
+    "profile_settings": {
+      "ai-creator": {
+        "threshold": 7.0,
+        "topic_dedup": true
+      },
+      "tech-news": {
+        "threshold": 7.0,
+        "topic_dedup": true
+      }
+    },
+    "profiles_dir": "profiles"
+  },
+  "sources": {
+    "gdelt": {
+      "category": "news",
+      "country": null,
+      "enabled": true,
+      "language": null,
+      "max_records": 50,
+      "mode": "ArtList",
+      "profile": "tech-news",
+      "query": "artificial intelligence",
+      "timespan": null
+    },
+    "google_news": {
+      "category": "news",
+      "ceid": null,
+      "country": "US",
+      "enabled": true,
+      "language": "en",
+      "max_results": 50,
+      "profile": "tech-news",
+      "query": "artificial intelligence"
+    },
+    "hackernews": {
+      "enabled": true,
+      "fetch_top_stories": 30,
+      "min_score": 100,
+      "profile": "tech-news"
+    },
+    "ossinsight": {
+      "enabled": true,
+      "keywords": [],
+      "languages": [
+        "All",
+        "Python",
+        "TypeScript"
+      ],
+      "max_items": 30,
+      "min_stars": 10,
+      "period": "past_24_hours",
+      "profile": "tech-news"
+    },
+    "reddit": {
+      "enabled": true,
+      "fetch_comments": 10,
+      "subreddits": [
+        {
+          "enabled": true,
+          "fetch_limit": 10,
+          "min_score": 60,
+          "profile": "tech-news",
+          "sort": "hot",
+          "subreddit": "MachineLearning",
+          "time_filter": "day"
+        },
+        {
+          "enabled": true,
+          "fetch_limit": 10,
+          "min_score": 60,
+          "profile": "ai-creator",
+          "sort": "hot",
+          "subreddit": "LocalLLaMA",
+          "time_filter": "day"
+        }
+      ],
+      "users": []
+    },
+    "rss": [
+      {
+        "category": "ai-tools",
+        "enabled": true,
+        "name": "Simon Willison",
+        "profile": "tech-news",
+        "url": "https://simonwillison.net/atom/everything/"
+      },
+      {
+        "category": "ai-news",
+        "enabled": true,
+        "name": "量子位",
+        "profile": "tech-news",
+        "url": "https://wechat2rss.xlab.app/feed/7131b577c61365cb47e81000738c10d872685908.xml"
+      },
+      {
+        "category": "ai-news",
+        "enabled": true,
+        "name": "新智元",
+        "profile": "tech-news",
+        "url": "https://wechat2rss.xlab.app/feed/ede30346413ea70dbef5d485ea5cbb95cca446e7.xml"
+      },
+      {
+        "category": "semiconductors",
+        "enabled": true,
+        "name": "Semianalysis",
+        "profile": "tech-news",
+        "url": "https://newsletter.semianalysis.com/feed"
+      },
+      {
+        "category": "llm-inference",
+        "content_extractor": "trafilatura",
+        "enabled": true,
+        "name": "vLLM Blog",
+        "profile": "tech-news",
+        "url": "https://vllm.ai/blog/rss.xml"
+      },
+      {
+        "category": "github-trending",
+        "enabled": true,
+        "name": "GitHub Trending - Daily",
+        "profile": "ai-creator",
+        "url": "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml"
+      }
+    ]
+  }
+}
