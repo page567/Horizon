@@ -7,7 +7,7 @@
       "zh"
     ],
     "max_tokens": 8192,
-    "model": "gemini-2.5-flash",
+    "model": "gemini-3.8-flash",
     "provider": "gemini",
     "temperature": 0.3,
     "throttle_sec": 3
