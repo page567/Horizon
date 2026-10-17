@@ -1,14 +1,15 @@
 {
   "ai": {
     "analysis_concurrency": 1,
-    "api_key_env": "GOOGLE_API_KEY",
+    "api_key_env": "GROQ_API_KEY",
+    "base_url": "https://api.groq.com/openai/v1",
     "enrichment_concurrency": 2,
     "languages": [
       "zh"
     ],
     "max_tokens": 8192,
-    "model": "gemini-3.8-flash",
-    "provider": "gemini",
+    "model": "llama-3.3-70b-versatile",
+    "provider": "openai",
     "temperature": 0.3,
     "throttle_sec": 3
   },
@@ -70,7 +71,7 @@
       "country": null,
       "enabled": true,
       "language": null,
-      "max_records": 4,
+      "max_records": 8,
       "mode": "ArtList",
       "profile": "tech-news",
       "query": "artificial intelligence",
@@ -82,13 +83,13 @@
       "country": "US",
       "enabled": true,
       "language": "en",
-      "max_results": 5,
+      "max_results": 10,
       "profile": "tech-news",
       "query": "artificial intelligence"
     },
     "hackernews": {
       "enabled": true,
-      "fetch_top_stories": 6,
+      "fetch_top_stories": 10,
       "min_score": 100,
       "profile": "tech-news"
     },
