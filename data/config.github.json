@@ -3,7 +3,7 @@
     "analysis_concurrency": 1,
     "api_key_env": "GROQ_API_KEY",
     "base_url": "https://api.groq.com/openai/v1",
-    "enrichment_concurrency": 2,
+    "enrichment_concurrency": 1,
     "languages": [
       "zh"
     ],
